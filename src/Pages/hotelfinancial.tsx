@@ -6,7 +6,7 @@ import popSound from './Sheiz.mp3';
 
 const useTypewriter = (texts: string[], speed: number = 70, delay: number = 5000) => {
   const [displayedText, setDisplayedText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
 

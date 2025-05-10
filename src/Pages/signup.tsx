@@ -1,6 +1,6 @@
 import WuraSvg from "./WURA .svg"; // Ensure the path is correct and has no extra spaces
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Correct import for useNavigate and Link
+import { useNavigate } from "react-router-dom"; // Correct import for useNavigate and Link
 import Google from "./google.svg";
 import Github from "./github.svg";
 import Twitter from "./twitter.svg";
