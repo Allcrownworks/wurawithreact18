@@ -39,8 +39,8 @@ export default function DataChart() {
   const [startPanPosition, setStartPanPosition] = useState({ x: 0, y: 0 })
   const [startDomain, setStartDomain] = useState(zoomDomain)
 
-  const chartRef = useRef<HTMLDivElement>(null)
-  const chartContainerRef = useRef<HTMLDivElement>(null)
+  const chartRef = useRef<HTMLDivElement | null>(null)
+  const chartContainerRef = useRef<HTMLDivElement | null>(null)
 
   // Add mouse wheel zoom functionality
   useEffect(() => {
@@ -502,7 +502,9 @@ export default function DataChart() {
       <div
         className={`h-[300px] relative ${isPanning ? "cursor-grabbing" : "cursor-grab"}`}
         ref={(el) => {
-          chartRef.current = el;
+          if (chartRef.current !== el) {
+            (chartRef as React.MutableRefObject<HTMLDivElement | null>).current = el;
+          }
           chartContainerRef.current = el;
         }}
       >

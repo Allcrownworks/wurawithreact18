@@ -145,7 +145,7 @@ type Position = {
 export default function WorldMap() {
   const [tooltip, setTooltip] = useState<{ content: string; x: number; y: number } | null>(null);
   const [position, setPosition] = useState<Position>({ coordinates: [0, 0], zoom: 1 });
-  const mapRef = useRef<SVGSVGElement>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
 
   const normalizeCountryName = (name: string): string => {
     return name.replace(/[^a-zA-Z\s]/g, "").trim().toLowerCase();
@@ -193,11 +193,11 @@ export default function WorldMap() {
       {/* Map Container */}
       <div className="overflow-hidden h-[293px] ">
  
-        <ComposableMap
-          projection="geoMercator"
-          projectionConfig={{ scale: 150, center: [0, 20] }}
-          ref={mapRef}
-        >
+        <div ref={mapRef as React.RefObject<HTMLDivElement>}>
+          <ComposableMap
+            projection="geoMercator"
+            projectionConfig={{ scale: 150, center: [0, 20] }}
+          >
           <ZoomableGroup
             center={position.coordinates}
             zoom={position.zoom}
@@ -247,7 +247,8 @@ export default function WorldMap() {
     })}
     </Geographies>
           </ZoomableGroup>
-        </ComposableMap>
+          </ComposableMap>
+        </div>
       </div>
 
       {/* Tooltip */}
