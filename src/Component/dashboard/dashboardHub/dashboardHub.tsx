@@ -46,7 +46,7 @@ export function DashboardHub() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {/*  Messages */}
           {showCard1 && (
-            <div className="relative bg-white">
+            <div className="bg-white">
               <div className=" row-span-2 border-gray-300 border-1">
                 <div className="p-4 flex justify-between place-items-center">
                   <span>
@@ -74,11 +74,11 @@ export function DashboardHub() {
                     </button>
                   </span>
                 </div>
-                <span className="">
+                {/* <span className="">
                   <hr className="border-gray-300" />
-                </span>
+                </span> */}
                 {/* message toggle*/}
-                <div className={`${!toggle ? "hidden" : "block md:absolute"}`}>
+                <div className={`${!toggle ? "hidden" : ""}`}>
                   <div className=" bg-red-100 p-2 ">
                     <div className="p-4 flex gap-4 place-items-center">
                       <span>
@@ -108,7 +108,7 @@ export function DashboardHub() {
               <div className="border-gray-300 border-1">
                 <div className="p-4 flex justify-between place-items-center">
                   <span>
-                    <h1 className="text-md font-bold text-slate-700 ">
+                    <h1 className="text-md font-bold text-slate-700">
                       User project list
                     </h1>
                   </span>

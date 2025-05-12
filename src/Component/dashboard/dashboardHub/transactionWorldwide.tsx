@@ -15,16 +15,16 @@ const Transactionworldwide: React.FC = () => {
             <span className="col-span-7 ">
               <hr className="border-gray-100 " />
             </span>
-            <div className="col-span-1  text-center p-2 text-sm font-medium">
+            <div className="col-span-1 text-center p-2 text-sm font-medium">
               <h2>No</h2>
             </div>
-            <div className="col-span-2  text-center p-2 text-sm font-medium">
+            <div className="col-span-2  p-2 text-sm font-medium">
               <h2>Transaction</h2>
             </div>
-            <div className="col-span-2 text-center p-2 text-sm font-medium">
+            <div className="col-span-2 p-2 text-sm font-medium">
               <h2>Date</h2>
             </div>
-            <div className="col-span-2  text-center p-2 text-sm font-medium">
+            <div className="col-span-2 text-center p-2 text-sm font-medium">
               <h2>Amount</h2>
             </div>
             <span className="col-span-7 ">
@@ -45,8 +45,8 @@ const Transactionworldwide: React.FC = () => {
             <div className="col-span-2  p-2 text-sm font-medium place-items-center flex">
               <h2> 16 Jun 2014</h2>
             </div>
-            <div className="col-span-2  text-center text-sm font-medium flex flex-row gap-1 place-items-center mx-auto bg-emerald-400 px-2">
-              <h2 className="text-center flex">$483.00</h2>
+            <div className="col-span-2 text-sm font-medium flex flex-row gap-1 place-items-center mx-auto bg-emerald-400 px-2">
+              <h2 className=" flex">$483.00</h2>
             </div>
             <span className="col-span-7 ">
               <hr className="border-gray-300 " />

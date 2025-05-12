@@ -2,7 +2,7 @@ import React from "react";
 
 const Message: React.FC = () => {
   return (
-    <div className=" row-span-2 border-gray-300 border-1 overflow-y-hidden">
+    <div className=" row-span-2 border-gray-300 border-1">
       {/* message 1 */}
       <div className="p-4 flex justify-between place-items-center">
         <span>
