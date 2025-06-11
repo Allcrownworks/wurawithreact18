@@ -18,7 +18,7 @@ const Transactionworldwide: React.FC = () => {
             <div className="col-span-1 text-center p-2 text-sm font-medium">
               <h2>No</h2>
             </div>
-            <div className="col-span-2  p-2 text-sm font-medium">
+            <div className="col-span-2 p-2 text-sm font-medium">
               <h2>Transaction</h2>
             </div>
             <div className="col-span-2 p-2 text-sm font-medium">
