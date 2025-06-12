@@ -1,4 +1,4 @@
-// import { Facebook } from "lucide-react";
+import { Facebook } from "lucide-react";
 import Google from "./google.svg";
 import Github from "./github.svg";
 import Twitter from "./twitter.svg";
@@ -122,7 +122,7 @@ export function Home() {
               <div className="mt-6 text-center">
                 <p className="text-sm text-gray-600">Or sign up with</p>
                 <div className="mt-8 flex justify-center space-x-8">
-                  {/* <Facebook className="text-blue-400 fill-blue-400 w-5 h-5" /> */}
+                  <Facebook className="text-blue-400 fill-blue-400 w-5 h-5" /> 
                   <img src={Google} alt="Wura Logo" className="w-5 h-5" />
                   <img src={Twitter} alt="Wura Logo" className="w-5 h-5" />
                   <img src={Github} alt="Wura Logo" className="w-5 h-5" />
